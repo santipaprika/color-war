@@ -1,0 +1,13 @@
+{% extends "capstone/layout.html" %}
+{% load static %}
+
+{% block body %}
+    <div id="user_team" style="display:none">{{request.user.team.name}}</div>
+    <div id="csrf_token" style="display:none">{{ csrf_token }}</div>
+    
+{% if user.is_authenticated %}
+    <div id="CreateWarrior" />
+    <script type="text/babel" src="{% static 'capstone/createWarrior.js' %}">
+    </script>
+{% endif %}
+{% endblock %}

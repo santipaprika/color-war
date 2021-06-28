@@ -1,0 +1,181 @@
+.war-bg-left-chose, .war-bg-right-chose, .war-bg-left, .war-bg-right {
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    height: 100vh;
+    width: 50%;
+    display: table-cell;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vmax;
+    font-family: Candara;
+    cursor: pointer;
+}
+
+.col-container {
+    display: table;
+    width: 100%;
+}
+
+.battle-info {
+    font-size: 1.5vmax;
+    color: #ffd490;
+}
+
+.war-bg-left-chose, .war-bg-left {
+    background-color: cornflowerblue;
+}
+
+.war-bg-left-chose, .war-bg-right-chose {
+    display: flex;
+    float: left;
+}
+
+.war-bg-left {
+    background-color: cornflowerblue;
+    cursor: default;
+}
+
+.war-bg-right-chose, .war-bg-right {
+    background-color: indianred;
+}
+
+.war-bg-right {
+    cursor: default;
+}
+
+.war-bg-left-chose:hover {
+    background-color: #3276f0;
+    text-shadow: -1px -1px 20px #6199ff, 1px -1px 20px #6199ff, -1px 1px 20px #6199ff, 1px 1px 20px #6199ff;
+}
+
+.war-bg-right-chose:hover {
+    background-color: red;
+    text-shadow: -1px -1px 20px #ff8e8e, 1px -1px 20px #ff8e8e, -1px 1px 20px #ff8e8e, 1px 1px 20px #ff8e8e;
+}
+
+.warriors-info {
+    font-size: 1.5vmax;
+}
+
+.warrior-in-list {
+    border: solid lightgray 0.3vmax;
+    border-radius: 3px;
+    border-color: rgba(53, 38, 0, 0.88);
+    padding: 2vh 1vw 2vh 1vw;
+    vertical-align: central;
+    text-align: left;
+    margin: 1vh 5vw 1vh 5vw;
+    cursor: pointer;
+    font-size: 1.5vmax;
+}
+
+.warrior-in-list:hover {
+    background-color: rgba(233, 233, 233, 0.2);
+}
+
+.warrior-name, .warrior-stats {
+    width: 30%;
+    display: inline-block;
+    word-wrap: break-word;
+    vertical-align: middle;
+}
+
+.warrior-stats {
+    width: 65%;
+    margin-left: 1vw;
+}
+
+.str-bar, .hp-bar, .age-bar {
+    width: 30%;
+    height: 65%;
+    background-color: #e19e00;
+    margin: 0px 0.2vw 0px 0.2vw;
+}
+
+.hp-bar {
+    background-color: lawngreen;
+}
+
+.age-bar {
+    background-color: red;
+}
+
+.empty-bar {
+    width: 40%;
+    height: 2.6vh;
+    background-color: #444;
+    display: inline-flex;
+    align-items: center;
+}
+
+.create-warrior-button-blue, .create-warrior-button-red {
+    background-color: blue;
+    color: white;
+    border: black solid 0.1vmax;
+    border-radius: 1vmax;
+    font-size: 1.3vmax;
+    width: 25%;
+    margin: 4vh 7vw;
+}
+
+.create-warrior-button-red {
+    background-color: darkred;
+}
+
+.create-warrior-button-red:hover {
+    background-color: #510101;
+    color: darkgray;
+}
+
+.create-warrior-button-blue:hover {
+    background-color: #000098;
+    color: darkgray;
+}
+
+.create-warrior-red, .create-warrior-blue {
+    top: 0;
+    bottom: 0;
+    min-height: 100vh;
+    width: 100%;
+    text-align: center;
+    font-size: 3.5vmax;
+    font-family: Candara;
+    background-color: indianred;
+    padding-top: 5vh; 
+}
+
+.create-warrior-blue {
+    background-color: cornflowerblue;
+}
+
+.operations {
+    text-align: center;
+    font-size: 1.2vmax;
+    font-family: Candara;
+    line-height: 2vh;
+}
+
+.result-field {
+    width: 8%;
+}
+
+.errors {
+    font-size: 2vmax;
+    background-color: orange;
+}
+
+.upgrade {
+    font-size: 1.3vmax;
+    color: lawngreen;
+    cursor: pointer;
+}
+
+.upgrade:hover {
+    opacity: 0.75;
+}
+
+.upgrade-image {
+    width: 3vmax;
+    height: 3vmax;
+}

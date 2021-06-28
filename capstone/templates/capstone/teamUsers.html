@@ -1,0 +1,10 @@
+{% extends "capstone/layout.html" %}
+{% load static %}
+
+{% block body %}
+    <div id="team_name" style="display:none">{{ team_name }}</div>
+    
+    <div id="teamUsers" />
+    <script type="text/babel" src="{% static 'capstone/teamUsers.js' %}">
+    </script>
+{% endblock %}

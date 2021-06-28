@@ -1,0 +1,15 @@
+{% extends "capstone/layout.html" %}
+{% load static %}
+
+{% block body %}
+    <div id="user_team" style="display:none">{{ dest_user.team.name }}</div>
+    <div id="user_id" style="display:none">{{ dest_user.id }}</div>
+    <div id="user_name" style="display:none">{{ dest_user.username }}</div>
+    <div id="view" style="display:none">{{ view }}</div>
+    <div id="page" style="display:none">profile</div>
+    <div id="csrf_token" style="display:none">{{ csrf_token }}</div>
+    
+    <div id="userWarriors" />
+    <script type="text/babel" src="{% static 'capstone/app.js' %}">
+    </script>
+{% endblock %}
